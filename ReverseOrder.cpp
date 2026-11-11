@@ -4,14 +4,14 @@ using namespace std;
 
 void print(stack<int> &st){
     stack<int> helper;
-    while(st.size()){
+    while(st.size()>0){
         cout<<st.top()<<" ";
         helper.push(st.top());
         st.pop();
     }
     cout<<endl;
     // put back element i st from helper
-    while(helper.size()){
+    while(helper.size()>0){
         st.push(helper.top());
         helper.pop();
      }
@@ -47,6 +47,5 @@ int main(){
     cout<<"After Reverse"<<endl;
     reverse(st);
     print(st);
-
 
 }
