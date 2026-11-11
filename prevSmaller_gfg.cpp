@@ -1,3 +1,4 @@
+// gfg practice
 class Solution {
   public:
     vector<int> prevSmaller(vector<int>& arr) {
